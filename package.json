@@ -35,6 +35,10 @@
     "**/*.{ts,tsx}": [
       "eslint -c .eslintrc.js --fix",
       "prettier --write"
+    ],
+    "**/*.tsx": [
+      "eslint -c .eslintrc.js --fix",
+      "prettier --write"
     ]
   }
 }
