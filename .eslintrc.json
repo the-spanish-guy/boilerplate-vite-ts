@@ -19,5 +19,10 @@
     "react/react-in-jsx-scope": "off",
     "space-before-function-paren": "off",
     "react-hooks/exhaustive-deps": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

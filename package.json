@@ -21,6 +21,7 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-react": "^7.28.0",
     "husky": ">=6",
@@ -30,7 +31,17 @@
     "vite": "^2.7.2"
   },
   "lint-staged": {
-    "*.{js, jsx, ts, tsx, json}": "eslint --cache --fix",
-    "*.{js,jsx,ts,tsx,json}": "prettier --write"
+    "src/**/*.{js, jsx, ts, tsx, json}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "src/*.{js, jsx, ts, tsx, json}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
