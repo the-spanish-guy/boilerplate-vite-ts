@@ -32,9 +32,10 @@
     "vite": "^2.7.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+    "**/*.ts?(x)": [
+      "eslint -c .eslintrc.js --fix",
+      "prettier --write",
+      "git add"
     ]
   }
 }
