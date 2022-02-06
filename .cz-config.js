@@ -34,7 +34,9 @@ module.exports = {
       name: '💚 ci:\tAdd or update regards to build process'
     }
   ],
+  scopes: [{ name: 'routes' }, { name: 'hooks' }, { name: 'components' }],
   allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix'],
-  subjectLimit: 100
+  subjectLimit: 100,
+  breakingPrefix: 'BREAKING CHANGE:'
 }
