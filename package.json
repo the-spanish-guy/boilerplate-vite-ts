@@ -32,14 +32,10 @@
   },
   "lint-staged": {
     "src/**/*.{js, jsx, ts, tsx, json}": [
-      "eslint --cache --fix",
+      "eslint --fix",
       "prettier --write"
     ],
     "src/*.{js, jsx, ts, tsx, json}": [
-      "eslint --cache --fix",
-      "prettier --write"
-    ],
-    "*.json": [
       "eslint --fix",
       "prettier --write"
     ]
