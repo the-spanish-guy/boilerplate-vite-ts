@@ -34,8 +34,7 @@
   "lint-staged": {
     "**/*.ts?(x)": [
       "eslint -c .eslintrc.js --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
