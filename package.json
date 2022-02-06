@@ -33,11 +33,11 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
-      "eslint -c .eslintrc.js --fix",
+      "eslint -c .eslintrc.json --fix",
       "prettier --write"
     ],
     "src/*.tsx": [
-      "eslint -c .eslintrc.js --fix",
+      "eslint -c .eslintrc.json --fix",
       "prettier --write"
     ]
   }
