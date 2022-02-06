@@ -36,7 +36,7 @@
       "eslint -c .eslintrc.js --fix",
       "prettier --write"
     ],
-    "**/*.tsx": [
+    "src/*.tsx": [
       "eslint -c .eslintrc.js --fix",
       "prettier --write"
     ]
