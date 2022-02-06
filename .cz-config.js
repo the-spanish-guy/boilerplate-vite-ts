@@ -34,7 +34,7 @@ module.exports = {
       name: '💚 ci:\tAdd or update regards to build process',
     }
   ],
-  allowBreakingChanges: ['fix'],
-  subjectLimit: 100, 
+  allowBreakingChanges: ['feat', 'fix'],
+  subjectLimit: 80, 
 
 };
