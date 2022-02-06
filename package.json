@@ -30,15 +30,5 @@
     "prettier": "2.5.1",
     "typescript": "^4.4.4",
     "vite": "^2.7.2"
-  },
-  "lint-staged": {
-    "**/*.{ts,tsx}": [
-      "eslint -c .eslintrc.json --fix",
-      "prettier --write"
-    ],
-    "src/*.tsx": [
-      "eslint -c .eslintrc.json --fix",
-      "prettier --write"
-    ]
   }
 }
