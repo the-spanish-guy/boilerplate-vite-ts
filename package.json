@@ -32,11 +32,11 @@
     "vite": "^2.7.2"
   },
   "lint-staged": {
-    "src/**/*.{js, jsx, ts, tsx, json}": [
+    "src/**/*.{ts, tsx, json}": [
       "eslint --fix",
       "prettier --write"
     ],
-    "src/*.{js, jsx, ts, tsx, json}": [
+    "src/*.{ts, tsx, json}": [
       "eslint --fix",
       "prettier --write"
     ]
