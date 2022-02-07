@@ -1,3 +1,5 @@
+import './index.css'
+
 export function Home() {
-  return <h1>Hello World!!!</h1>
+  return <h1 className="teste">Hello world!</h1>
 }
