@@ -35,9 +35,8 @@ module.exports = {
     }
   ],
   scopes: [{ name: 'routes' }, { name: 'hooks' }, { name: 'components' }],
-  askForBreakingChangeFirst: true,
+  // askForBreakingChangeFirst: true,
   allowCustomScopes: true,
-  allowBreakingChanges: ['feat', 'fix'],
-  subjectLimit: 100,
-  breakingPrefix: 'BREAKING CHANGE:'
+  allowBreakingChanges: [':sparkles: feat', ':bug: fix'],
+  subjectLimit: 100
 }
