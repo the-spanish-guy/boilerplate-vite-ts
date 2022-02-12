@@ -42,24 +42,15 @@ export function Home() {
         </div>
         <div className="flex flex-col items-center">
           <div>
-            <button
-              className="w-20 m-2 p-3 text-[#5E69EE] font-bold bg-[white] rounded"
-              onClick={handleCatApi}
-            >
+            <button className="btnApi" onClick={handleCatApi}>
               Cat
             </button>
-            <button
-              className="w-20 m-2 p-3 text-[#5E69EE] font-bold bg-[white] rounded"
-              onClick={handleDogApi}
-            >
+            <button className="btnApi" onClick={handleDogApi}>
               Dog
             </button>
           </div>
           <div>
-            <button
-              className="m-2 p-3 text-white font-bold bg-[#39AFEA] rounded w-44"
-              onClick={handleClick}
-            >
+            <button className="btnCount" onClick={handleClick}>
               Contador
             </button>
             <Counter />
