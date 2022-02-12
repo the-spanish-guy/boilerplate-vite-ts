@@ -1,4 +1,4 @@
-import { IDogApi } from '../interfaces/DogApiInterface'
+import { IDogApi } from '@/interfaces/DogApiInterface'
 import BasicService from './HttpServices'
 
 class DogService extends BasicService {

@@ -1,4 +1,4 @@
-import { ICatApi } from '../interfaces/CatApiInterface'
+import { ICatApi } from '@/interfaces/CatApiInterface'
 import BasicService from './HttpServices'
 
 class CatService extends BasicService {
