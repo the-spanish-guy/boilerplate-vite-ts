@@ -1,0 +1,7 @@
+.container {
+  @apply absolute w-16 h-16 text-center dark:bg-[white] bg-[#5e69ee] border-none rounded-full cursor-pointer bottom-3 right-3 shadow-lg   shadow-[#5E69EE]/50 dark:shadow-white/20;
+}
+
+.container-btn {
+  @apply flex items-center justify-center w-16 h-16  dark:text-[#5E69EE] text-white;
+}
