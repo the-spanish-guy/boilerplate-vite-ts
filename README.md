@@ -1,6 +1,7 @@
 # Vite + React + TailwindCSS + Zustand!
 
-> Boilerplate criado para te ajudar a construir suas aplicações sem dificuldades
+> Boilerplate criado para te ajudar a construir suas aplicações sem dificuldades <br/>
+> Para ver a versão com chakra-ui [clique aqui](https://github.com/the-spanish-guy/boilerplate-vite-ts/tree/chakra-ui)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
