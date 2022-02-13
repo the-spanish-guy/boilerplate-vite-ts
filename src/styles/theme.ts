@@ -10,7 +10,7 @@ const warning = '#FFE27C'
 const error = '#F98585'
 
 const config: ThemeConfig = {
-  initialColorMode: 'light',
+  initialColorMode: 'dark',
   useSystemColorMode: false
 }
 
