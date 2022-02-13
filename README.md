@@ -1,6 +1,6 @@
 # Vite + React + TailwindCSS + Zustand!
 
-> Boilerplate criado para te ajudar a começar suas aplicações sem dificuldades
+> Boilerplate criado para te ajudar a construir suas aplicações sem dificuldades
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
