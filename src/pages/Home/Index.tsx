@@ -1,3 +1,11 @@
+import {
+  Box,
+  Button,
+  Center,
+  Image,
+  Text,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 
 import useStore from '@/stores/useStore'
@@ -6,8 +14,6 @@ import DogService from '@/services/DogService'
 import Counter from '@/components/Counter/Index'
 import LayoutComponent from '@/components/Layout'
 import { ToggleThemeButton } from '@/components/ToggleTheme/Index'
-
-import './index.css'
 
 export function Home() {
   const [image, setImage] = useState('')
@@ -38,28 +44,59 @@ export function Home() {
 
   return (
     <LayoutComponent title="Home">
-      <div className="flex flex-col items-center justify-center w-screen h-screen">
-        <h1 className="title">Vite + React + TailwindCSS + Zustand!</h1>
-        <div className="flex justify-center w-full">
-          <img className="w-[350px] h-full rounded" src={image} alt="" />
-        </div>
-        <div className="flex flex-col items-center">
-          <div>
-            <button className="api-btn" onClick={handleCatApi}>
-              Cat
-            </button>
-            <button className="api-btn" onClick={handleDogApi}>
-              Dog
-            </button>
-          </div>
-          <div>
-            <button className="count-btn" onClick={handleClick}>
-              Contador
-            </button>
-            <Counter />
-          </div>
-        </div>
-      </div>
+      <Center
+        h="100vh"
+        justifyContent={'center'}
+        alignItems={'center'}
+        flexDir={'column'}
+      >
+        <Text
+          fontSize="3xl"
+          fontWeight="bold"
+          mb={'40px'}
+          color={useColorModeValue('#5e69ee', '#F4F4FB')}
+          decoration="underline"
+        >
+          Vite + React + TailwindCSS + Zustand!
+        </Text>
+        <Image src={image} h="auto" w="350px" />
+        <Box as="div">
+          <Button
+            onClick={handleCatApi}
+            bgColor={useColorModeValue('#5e69ee', '#F4F4FB')}
+            color={useColorModeValue('#F4F4FB', '#5e69ee')}
+            w="80px"
+            m="8px"
+            p="12px"
+          >
+            Cat
+          </Button>
+          <Button
+            onClick={handleDogApi}
+            bgColor={useColorModeValue('#5e69ee', '#F4F4FB')}
+            color={useColorModeValue('#F4F4FB', '#5e69ee')}
+            w="80px"
+            m="8px"
+            p="12px"
+          >
+            Dog
+          </Button>
+        </Box>
+        <Box as="div">
+          <Button
+            bgColor={'#39AFEA'}
+            color={'#F4F4FB'}
+            w="176px"
+            h="48px"
+            m="8px"
+            p="12px"
+            onClick={handleClick}
+          >
+            Contador
+          </Button>
+          <Counter />
+        </Box>
+      </Center>
       <ToggleThemeButton />
     </LayoutComponent>
   )
