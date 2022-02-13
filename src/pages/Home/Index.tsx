@@ -5,6 +5,7 @@ import CatService from '@/services/CatService'
 import DogService from '@/services/DogService'
 import useStore from '@/stores/useStore'
 import './index.css'
+import { ToggleThemeButton } from '@/components/ToggleTheme/Index'
 
 export function Home() {
   const [image, setImage] = useState('')
@@ -57,6 +58,7 @@ export function Home() {
           </div>
         </div>
       </div>
+      <ToggleThemeButton />
     </LayoutComponent>
   )
 }
