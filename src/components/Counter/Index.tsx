@@ -1,10 +1,16 @@
+import { Text, useColorModeValue } from '@chakra-ui/react'
+
 import useStore from '@/stores/useStore'
 
 export default function Counter() {
   const counter = useStore(state => state.counter)
   return (
-    <p className="font-bold text-center dark:text-white text-[#5e69ee]">
+    <Text
+      fontWeight="bold"
+      textAlign="center"
+      color={useColorModeValue('#5e69ee', '#F4F4FB')}
+    >
       {counter}
-    </p>
+    </Text>
   )
 }
