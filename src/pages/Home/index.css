@@ -1,0 +1,11 @@
+.title {
+  @apply text-3xl dark:text-white text-[#5e69ee] font-bold underline mb-10;
+}
+
+.api-btn {
+  @apply w-20 m-2 p-3 dark:text-[#5E69EE] font-bold dark:bg-[white] bg-[#5e69ee] text-white rounded;
+}
+
+.count-btn {
+  @apply m-2 p-3 text-white font-bold bg-[#39AFEA] rounded w-44;
+}
