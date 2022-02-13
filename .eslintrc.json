@@ -18,7 +18,8 @@
     "prettier/prettier": ["error"],
     "react/react-in-jsx-scope": "off",
     "space-before-function-paren": "off",
-    "react-hooks/exhaustive-deps": "off"
+    "react-hooks/exhaustive-deps": "off",
+    "multiline-ternary": "off"
   },
   "settings": {
     "react": {
