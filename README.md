@@ -13,7 +13,7 @@
 - [Husky](https://github.com/typicode/husky)
 - [Lint-staged](https://github.com/okonet/lint-staged)
 - [Commitzen](https://github.com/commitizen/cz-cli)
-- [TailwindCSS](https://tailwindcss.com/)
+- [ChakraUI](https://chakra-ui.com/)
 - [Zustand](https://zustand-demo.pmnd.rs/)
 
 ## :wrench: Começando
