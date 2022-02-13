@@ -37,7 +37,7 @@ export const ToggleThemeButton = () => {
   }, [theme])
 
   return (
-    <div className="container" onClick={toggleMode}>
+    <div className="container-div" onClick={toggleMode}>
       <div className="container-btn">
         {theme === 'dark' ? <BsSunFill size={30} /> : <GiMoonBats size={30} />}
       </div>
