@@ -1,46 +1,43 @@
 import { BsSunFill } from 'react-icons/bs'
-import { useEffect, useState } from 'react'
 import { GiMoonBats } from 'react-icons/gi'
-
-import './index.css'
+import { Box, Flex, useColorMode, useColorModeValue } from '@chakra-ui/react'
 
 export const ToggleThemeButton = () => {
-  const [theme, setTheme] = useState<string | null>(null)
-
-  const onLoad = () => {
-    const isDarkSet = localStorage.theme === 'dark'
-    const isThemeStored = 'theme' in localStorage
-    const isDarkPrefered = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches
-
-    if (isDarkSet || (!isThemeStored && isDarkPrefered)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-    setTheme(localStorage.theme)
-  }
-  const toggleMode = () => {
-    document.documentElement.classList.toggle('dark')
-    if (localStorage.theme === 'dark') {
-      localStorage.theme = 'light'
-      setTheme('light')
-    } else {
-      localStorage.theme = 'dark'
-      setTheme('dark')
-    }
-  }
-
-  useEffect(() => {
-    onLoad()
-  }, [theme])
+  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <div className="container-div" onClick={toggleMode}>
-      <div className="container-btn">
-        {theme === 'dark' ? <BsSunFill size={30} /> : <GiMoonBats size={30} />}
-      </div>
-    </div>
+    <Box
+      as="div"
+      position="absolute"
+      w="64px"
+      h="64px"
+      right="12px"
+      bottom="12px"
+      bgColor={useColorModeValue('#5e69ee', '#F4F4FB')}
+      rounded="9999px"
+      onClick={toggleColorMode}
+      boxShadow="lg"
+      cursor="pointer"
+    >
+      <Flex
+        as="div"
+        alignItems="center"
+        justifyContent="center"
+        w="64px"
+        h="64px"
+      >
+        {colorMode === 'dark' ? (
+          <BsSunFill
+            size={30}
+            color={useColorModeValue('#F4F4FB', '#5e69ee')}
+          />
+        ) : (
+          <GiMoonBats
+            size={30}
+            color={useColorModeValue('#F4F4FB', '#5e69ee')}
+          />
+        )}
+      </Flex>
+    </Box>
   )
 }
