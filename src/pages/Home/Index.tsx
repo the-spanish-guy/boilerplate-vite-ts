@@ -43,15 +43,15 @@ export function Home() {
         </div>
         <div className="flex flex-col items-center">
           <div>
-            <button className="btnApi" onClick={handleCatApi}>
+            <button className="api-btn" onClick={handleCatApi}>
               Cat
             </button>
-            <button className="btnApi" onClick={handleDogApi}>
+            <button className="api-btn" onClick={handleDogApi}>
               Dog
             </button>
           </div>
           <div>
-            <button className="btnCount" onClick={handleClick}>
+            <button className="count-btn" onClick={handleClick}>
               Contador
             </button>
             <Counter />
