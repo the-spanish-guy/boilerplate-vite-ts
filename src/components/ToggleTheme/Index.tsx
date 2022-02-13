@@ -1,6 +1,6 @@
+import { BsSunFill } from 'react-icons/bs'
 import { useEffect, useState } from 'react'
 import { GiMoonBats } from 'react-icons/gi'
-import { BsSunFill } from 'react-icons/bs'
 
 import './index.css'
 

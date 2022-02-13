@@ -1,5 +1,5 @@
-import { ICatApi } from '@/interfaces/CatApiInterface'
 import BasicService from './HttpServices'
+import { ICatApi } from '@/interfaces/CatApiInterface'
 
 class CatService extends BasicService {
   constructor() {

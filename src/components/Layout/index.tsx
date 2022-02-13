@@ -1,5 +1,5 @@
-import { FC, ReactElement } from 'react'
 import { Helmet } from 'react-helmet'
+import { FC, ReactElement } from 'react'
 
 import catIcon from '@/assets/cat.png'
 import dogIcon from '@/assets/dog.png'

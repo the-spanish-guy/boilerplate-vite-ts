@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
-import Counter from '@/components/Counter/Index'
-import LayoutComponent from '@/components/Layout'
+
+import useStore from '@/stores/useStore'
 import CatService from '@/services/CatService'
 import DogService from '@/services/DogService'
-import useStore from '@/stores/useStore'
-import './index.css'
+import Counter from '@/components/Counter/Index'
+import LayoutComponent from '@/components/Layout'
 import { ToggleThemeButton } from '@/components/ToggleTheme/Index'
+
+import './index.css'
 
 export function Home() {
   const [image, setImage] = useState('')

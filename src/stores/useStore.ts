@@ -1,6 +1,5 @@
 import create from 'zustand'
 
-type Theme = 'light' | 'dark'
 type State = {
   counter: number
   setCounter: (counter: number) => void
