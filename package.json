@@ -1,6 +1,11 @@
 {
   "name": "boilerplate-react-vite",
   "version": "1.0.0",
+  "homepage": "https://github.com/the-spanish-guy/boilerplate-vite-ts#readme",
+  "author": {
+    "name": "Luis Enrique MP",
+    "url": "https://github.com/the-spanish-guy"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
