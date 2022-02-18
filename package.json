@@ -56,6 +56,6 @@
     }
   },
   "cz-customizable": {
-    "config": "config/path/to/my/config.js"
+    "config": ".cz-config.js"
   }
 }
